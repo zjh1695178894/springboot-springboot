@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form th:action="@{/save}" method="post">
+		用户名：<input type="text" name="name"><font color="red" th:errors="${users.name}"></font><br>
+		密码：<input type="text" name="password"><font color="red" th:errors="${users.password}"></font><br>
+		年龄：<input type="text" name="age">
+		<input type="submit" value="提交">
+	</form>
+</body>
+</html>

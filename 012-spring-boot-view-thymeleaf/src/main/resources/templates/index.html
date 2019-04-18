@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Insert title here</title>
+</head>
+<body>
+<span th:text="hello"></span><br>
+<span th:text="${msg}"></span><br>
+<input type="text" th:value="${msg}"><br>
+<span th:text="${#strings.isEmpty(msg)}"></span><br>
+<span th:text="${#strings.contains(msg,'9')}"></span><br>
+<span th:text="${#strings.startsWith(msg,'t')}"></span><br>
+<span th:text="${#strings.endsWith(msg,'f')}"></span><br>
+<span th:text="${#dates.format(key)}"></span><br>
+<span th:text="${#dates.format(key,'yyyy-mm-dd')}"></span><br>
+<span th:text="${#dates.year(key)}"></span><br>
+<span th:text="${#dates.month(key)}"></span><br>
+<span th:text="${#dates.day(key)}"></span><br>
+</body>
+</html>

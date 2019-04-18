@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>thymeleaf-url</title>
+</head>
+<body>
+<a th:href="@{http://www.baidu.com}">绝对路径-thymeleaf</a>
+<a href="http://www.baidu.com">绝对路径</a>
+<hr>
+<a th:href="@{/show}">相对路径-thymeleaf</a>
+<hr>
+<a th:href="@{/show(id=1)}">传递参数</a>
+</body>
+</html>
